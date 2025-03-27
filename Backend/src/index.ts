@@ -25,7 +25,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:4200",
-      "https://soundwave-lac.vercel.app/"
+      "https://soundwave-lac.vercel.app"
     ],
     // optionSuccessStatus: 200, //to avoid issues with legacy browsers,
     credentials: true,
