@@ -5,8 +5,11 @@ interface User {
 
 class Client {
 
+    baseUrl: string = 'https://soundwave-lewe.onrender.com';
+    //baseUrl: string = 'http://localhost:3001';
+
     async fetchCurrentUser(): Promise<User> {
-        return await fetch('http://localhost:3001/current-user', {
+        return await fetch(`${this.baseUrl}/current-user`, {
             method: 'POST',
             credentials: 'include'
         })
