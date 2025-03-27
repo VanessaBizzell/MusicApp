@@ -23,7 +23,10 @@ const port = process.env.PORT || 3001;
 //Configure CORS Requests
 app.use(
   cors({
-    origin: "http://localhost:4200",
+    origin: [
+      "http://localhost:4200",
+      "https://soundwave-lac.vercel.app/"
+    ],
     // optionSuccessStatus: 200, //to avoid issues with legacy browsers,
     credentials: true,
   })
