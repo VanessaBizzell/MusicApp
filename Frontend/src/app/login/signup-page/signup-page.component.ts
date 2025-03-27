@@ -56,11 +56,14 @@ export class SignupPageComponent {
     }
   }
 
+  url: string = 'https://soundwave-lewe.onrender.com/signup';
+  //url: string = 'http://localhost:3001/signup';
+
   signup = async (): Promise<Response> => {
-    return await fetch('http://localhost:3001/signup', {
+    return await fetch(this.url, {
       method: 'POST',
       headers: {
-        "Content-type": "application/json"
+        "Content-type": "application/json",
       },
       body: JSON.stringify({
         "username": this.username,

@@ -10,10 +10,13 @@ import { FormDialogComponent } from '../form-dialog/form-dialog.component';
 
 export class LogoutComponent implements OnInit {
 
+  url: string = 'https://soundwave-lewe.onrender.com/logout';
+  //url: string = 'http://localhost:3001/logout';
+
   async ngOnInit() {
-    await fetch('http://localhost:3001/logout', {
+    await fetch(this.url, {
       method: 'POST',
-      credentials: 'include'
+      credentials: 'include',
     })
     .catch(error => console.error(error))
   }

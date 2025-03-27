@@ -20,13 +20,7 @@ dotenv.config();
 const app = express();
 const port = process.env.PORT || 3001;
 
-//Enables CORS for a specific origin
-const corsOptions = {
-  origin: "http://localhost:4200",
-  optionSuccessStatus: 200, //to avoid issues with legacy browsers,
-};
-
-//Enable All CORS Requests
+//Configure CORS Requests
 app.use(
   cors({
     origin: "http://localhost:4200",

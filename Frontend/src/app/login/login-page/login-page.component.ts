@@ -34,16 +34,19 @@ export class LoginPageComponent {
     this.password = password;
   }
 
+  url: string = 'https://soundwave-lewe.onrender.com/login';
+  //url: string = 'http://localhost:3001/login';
+
   async login(event: Event): Promise<Response> {
 
     event.preventDefault();
 
-    return await fetch('http://localhost:3001/login',
+    return await fetch(this.url,
       {
         method: 'POST',
         credentials: 'include',
         headers: {
-          "Content-Type": "application/JSON"
+          "Content-Type": "application/JSON",
         },
         body: JSON.stringify({
           "username": this.username,
