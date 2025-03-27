@@ -24,7 +24,7 @@ export class MusicService {
   async getAllMusic(): Promise<Music[]> {
     try {
       //const response = await client.fetchAuthenticated(this.url);
-      const response = await client.fetchAuthenticated('music');
+      const response = await client.fetchAuthenticated(this.url);
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
