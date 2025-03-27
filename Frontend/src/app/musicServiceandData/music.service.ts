@@ -11,15 +11,20 @@ export class MusicService {
   // url = 'http://localhost:3000/music';
 
   // to use musicAPI (remember to start backend server first: npm run dev)
-  url = 'http://localhost:3001/api/music';
-  url2 = 'http://localhost:3001';
+  
+  url: string = 'https://soundwave-lewe.onrender.com/api/';
+  url2: string = 'https://soundwave-lewe.onrender.com/';
+
+  //url = 'http://localhost:3001/api/music';
+  //url2 = 'http://localhost:3001';
 
   constructor() {}
 
   //fetch API call wrapped in a service to allow reuseability
   async getAllMusic(): Promise<Music[]> {
     try {
-      const response = await client.fetchAuthenticated(this.url);
+      //const response = await client.fetchAuthenticated(this.url);
+      const response = await client.fetchAuthenticated('music');
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
