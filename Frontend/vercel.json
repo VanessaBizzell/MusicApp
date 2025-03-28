@@ -14,12 +14,12 @@
         "src": "/(.*)",
         "dest": "/index.html"
       } ,
-   {  "path": "/login",  "prerender": false  },
-   { "path": "/signup", "prerender": false },
-   { "path": "/profile", "prerender": false },
-   { "path": "/feed", "prerender": false },
-   { "path": "/logout", "prerender": false },
-   { "path": "", "prerender": false }
+   {  "dest": "/login",  "prerender": false  },
+   { "dest": "/signup", "prerender": false },
+   { "dest": "/profile", "prerender": false },
+   { "dest": "/feed", "prerender": false },
+   { "dest": "/logout", "prerender": false },
+   { "dest": "", "prerender": false }
    
    ]
     }
