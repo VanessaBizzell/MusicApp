@@ -11,9 +11,11 @@ export class MusicService {
   // url = 'http://localhost:3000/music';
 
   // to use musicAPI locally (remember to start backend server first: npm run dev)
+  /*
   url = 'http://localhost:3001/api/music';
   url2 = 'http://localhost:3001';
-
+  */
+ 
   //deployment
   url = 'https://soundwave-lewe.onrender.com';
   url2 = 'https://soundwave-lewe.onrender.com';
