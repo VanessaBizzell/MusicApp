@@ -17,7 +17,7 @@ export class MusicService {
   */
  
   //deployment
-  url = 'https://soundwave-lewe.onrender.com';
+  url = 'https://soundwave-lewe.onrender.com/api/music';
   url2 = 'https://soundwave-lewe.onrender.com';
 
   constructor() {}

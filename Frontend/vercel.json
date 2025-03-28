@@ -9,7 +9,12 @@
         }
       }
     ],
-   "routes": [  {  "path": "/login",  "prerender": false  },
+   "routes": [  
+    {
+        "src": "/(.*)",
+        "dest": "/index.html"
+      } ,
+   {  "path": "/login",  "prerender": false  },
    { "path": "/signup", "prerender": false },
    { "path": "/profile", "prerender": false },
    { "path": "/feed", "prerender": false },
