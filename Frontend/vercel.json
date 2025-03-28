@@ -9,10 +9,13 @@
         }
       }
     ],
-    "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "/index.html"
-      }
-    ]
-  }
+   "routes": [  {  "path": "/login",  "prerender": false  },
+   { "path": "/signup", "prerender": false },
+   { "path": "/profile", "prerender": false },
+   { "path": "/feed", "prerender": false },
+   { "path": "/logout", "prerender": false },
+   { "path": "", "prerender": false }
+   
+   ]
+    }
+ 
