@@ -14,12 +14,11 @@
         "src": "/(.*)",
         "dest": "/index.html"
       } ,
-   {  "dest": "/login",  "prerender": false  },
-   { "dest": "/signup", "prerender": false },
-   { "dest": "/profile", "prerender": false },
-   { "dest": "/feed", "prerender": false },
-   { "dest": "/logout", "prerender": false },
-   { "dest": "", "prerender": false }
+
+      { "handle": "filesystem" }, 
+       { "src": "/assets/(.*)", "dest": "/assets/$1" }
+       
+  
    
    ]
     }

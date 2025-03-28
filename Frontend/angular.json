@@ -14,6 +14,7 @@
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "prerender": false,
+        
             "outputPath": "dist/frontend",
             "index": "src/index.html",
             "browser": "src/main.ts",
