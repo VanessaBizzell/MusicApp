@@ -11,7 +11,7 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular/build:browser",
+          "builder": "@angular-devkit/build-angular:application",
           "options": {
             "prerender": false,
             "outputPath": "dist/frontend",
