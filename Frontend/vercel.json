@@ -1,0 +1,21 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "package.json",
+        "use": "@vercel/static-build",
+        "config": {
+          "distDir": "dist/<project-name>/browser",
+          "maxLambdaSize": "15mb"
+        }
+      }
+    ],
+   "routes": [  {  "path": "/login",  "prerender": false  },
+  {  "path": "/signup",  "prerender": false  },
+  {  "path": "/logout",  "prerender": false  },
+  {  "path": "/feed",  "prerender": false  },
+  {  "path": "/profile", "prerender": false  },
+  {  "path": "",  "prerender": false  }
+   ]
+  }
+
